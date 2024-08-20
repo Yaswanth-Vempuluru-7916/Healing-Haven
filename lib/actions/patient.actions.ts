@@ -13,8 +13,8 @@ export const createUser = async (user: CreateUserParams) => {
             undefined,
             user.name
         )
-        console.log({newUser})
-        parseStringify(newUser)
+        // console.log({newUser})
+       return parseStringify(newUser)
 
     } catch (error: any) {
         if (error && error?.code === 409) {
